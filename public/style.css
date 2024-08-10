@@ -2,6 +2,42 @@
     --rich-black: #0F1A20;
 }
 
+
+.carousel-item {
+    position: relative;
+}
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 40%; /* Adjust as needed */
+}
+.video-overlay iframe {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item iframe {
+    width: 100%;
+    height: 315px;
+    /* You can adjust this height as needed */
+}
+
+@media (min-width: 768px) {
+    .carousel-item iframe {
+        height: 500px;
+        /* Adjust for larger screens */
+    }
+}
+
+
 .courses-section {
     text-align: center;
     padding: 40px 20px;
