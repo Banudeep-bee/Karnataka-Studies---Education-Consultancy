@@ -114,19 +114,33 @@ p.on_responsive-invisible {
     background-color: var(--sandy-brown);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     color: var(--panye-gray);
+    
 }
+
 
 nav ul {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+ul.rep-navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between items */
+    width: 100%; /* Makes sure the navbar takes up the full width */
+}
+
+li.fullsize {
+    margin-left: auto; /* Pushes the item to the right */
 }
 
 nav li {
     height: 50px;
 }
+
+
 
 nav a {
     height: 100%;

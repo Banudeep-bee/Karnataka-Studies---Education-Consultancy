@@ -129,6 +129,16 @@ nav ul {
     align-items: center;
 }
 
+ul.rep-navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between items */
+    width: 100%; /* Makes sure the navbar takes up the full width */
+}
+
+li.fullsize {
+    margin-left: auto; /* Pushes the item to the right */
+}
+
 nav li {
     height: 50px;
 }
